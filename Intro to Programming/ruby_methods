@@ -1,0 +1,28 @@
+# practice creating methods
+
+def helloWorld()
+    puts "Hello, World!"
+end
+
+
+# method call
+
+helloWorld
+
+
+
+# adding parameters to methods
+
+def paramMethod(greeting)
+    puts greeting
+end
+
+paramMethod("Hello!")
+
+
+# return value from a method
+
+def average(num1, num2)
+    return (num1 + num2) / 2.0
+end
+puts average(5, 10)
