@@ -1,0 +1,13 @@
+# maping
+
+arr = [1, 2, 3, 4]
+
+new_arr = arr.map { |ele| ele + 2 }
+
+print new_arr
+puts
+
+# selecting
+evens =  arr.select { |ele| ele % 2 == 0 }
+print evens
+puts

@@ -1,0 +1,31 @@
+# data structure utilizing key -> value pairs
+
+my_hash = {"name" => "App Academy", "color" => "red", "age" => 5} # similar to dictionary
+
+puts my_hash
+puts my_hash['name']
+
+# has_key? method
+puts my_hash.has_key?('color')
+
+# get keys
+print my_hash.keys
+puts
+
+# get values
+print my_hash.values
+puts
+
+
+# iterate hash
+
+my_hash.each do |key, val| # grab key and value
+    puts key
+    puts val
+    puts "-----"
+end
+
+my_hash.each_key do |key| #also .each_value exists as well
+    puts key
+end
+
