@@ -1,0 +1,10 @@
+sym = :hello    # immutable
+str = "hello"   # mutable
+p str.object_id # memory address
+# sym[0] = 'x' ERROR
+str[0] = 'x'
+p sym, str
+p sym == str
+
+my_hash = {name:"App Academy", occupation:"Software Engineer"}
+p my_hash[:name], my_hash[:occupation]
