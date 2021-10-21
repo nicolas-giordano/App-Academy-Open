@@ -1,0 +1,56 @@
+# testing with arrays
+
+arr = [1, 2, 3, 4]
+
+print arr   # show array 
+puts arr    # show each element of array
+
+# --------------
+
+# append to end array
+arr << 5    # shovel (append) to end of the array
+print arr
+puts
+
+arr.push(6, 7, 8) # similar to shovel except and accept multiple
+print arr
+puts
+
+# remove from end array
+arr.pop()
+print arr
+puts
+# append to start array
+arr.unshift(0)
+print arr
+puts
+
+# remove from start array
+arr.shift()
+print arr
+puts
+
+# --------------
+
+# index of element
+puts arr.index(8)       # no answer if not found
+puts arr.include?(8)    # true or false of element in array
+
+# reverse elements
+print arr.reverse       # does not manipulate stored array (requires ! to modify existing data: arr.reverse!)
+puts
+
+# slicing
+print arr[0..5]         # inclusive
+puts
+print arr[0...5]        # does not include end index
+puts
+
+# splitting
+str = "the quick brown fox jumped over the lazy dog"
+new_str =  str.split(" ")
+print new_str
+puts
+
+# joining
+puts new_str.join(" ")

@@ -1,0 +1,25 @@
+# enumerables
+
+arr = [1, 22, 51, 20, 912]
+
+arr.each {                              # similar to for ele in arr found in python
+    |elem| puts elem
+}
+puts
+
+arr.each_with_index do |ele, idx|       # have index of each element through iterations
+    puts ele
+    puts idx
+    puts "----"
+end
+
+# also str.each_char and str.each_char.with_index
+
+
+#ranges
+
+(1..10).each {|ele| puts ele}
+
+# .times
+
+4.times {puts "Hi"}

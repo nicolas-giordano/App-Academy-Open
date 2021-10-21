@@ -1,0 +1,22 @@
+# while loops
+
+def countFive() #count from 1 to 5
+    counter = 1
+    while counter <= 5
+        puts counter
+        counter += 1
+    end
+end
+
+countFive()
+
+
+def reverseFive() #count from 5 to 1
+    counter = 5
+    while counter > 0
+        puts counter
+        counter -= 1
+    end
+end
+
+reverseFive()
