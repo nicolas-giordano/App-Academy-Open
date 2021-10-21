@@ -1,0 +1,33 @@
+arr = [2, 4, 6, 8]
+
+# all?
+p arr.all? { |ele| ele.even? }
+
+# any?
+arr = [2, 3, 4, 6]
+
+p arr.any? { |ele| ele.odd? }
+
+# none?
+arr = [2, 4, 6, 8]
+p arr.none? {|ele| ele.odd?}
+
+# one?
+arr = [2, 3, 4, 6]
+p arr.one? {|ele| ele.odd?}
+
+# count
+p arr.count {|ele| ele.odd?}
+p arr.count {|ele| ele.even?}
+
+# max / min
+p arr.max
+p arr.min
+
+# flatten
+arr = [
+    [1,2,3],
+    [4],
+    5
+]
+p arr.flatten
