@@ -1,0 +1,18 @@
+# Implementation of bubble sort
+
+def bubble_sort(arr)
+    sorted = false  # indicator if we are fully sorted
+    
+    while (!sorted)
+        sorted = true                               # true unless a swap occurs
+        (0...arr.length - 1).each do |i|            # iterate through all indecies except last (checking neighbor)
+            if (arr[i] > arr[i+1])
+                arr[i], arr[i+1] = arr[i+1], arr[i] # swap if current is larger than next
+                sorted = false
+            end
+        end
+    end
+    arr                                             # return array
+end
+
+p bubble_sort([4,12,2,7,8,1,2,8,0])
