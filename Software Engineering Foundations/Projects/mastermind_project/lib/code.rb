@@ -77,13 +77,7 @@ class Code
   end
 
   def ==(guess)
-    if guess.length != self.length
-      return false
-    end
-    if self.num_exact_matches(guess) == self.length
-      return true
-    end
-    false
+    @pegs == guess.pegs
   end
   
   
