@@ -14,6 +14,7 @@ describe "Player" do
 
     describe "#guess" do 
         it "should ask user for input" do
+            allow(player).to receive(:gets).and_return("abc\n")
             expect {player.guess}.to output(/Enter a guess/).to_stdout
         end
 
